@@ -115,3 +115,15 @@ pipeline {
 
 
 // token = bc65a8fe0311ed3757a0b9bb6b5bb55a86690f67
+// upload singhkey as app 
+
+// install ansible in jenkins 
+// sudo apt-get update
+// sudo apt-get install software-properties-common
+// sudo apt-add-repository ppa:ansible/ansible
+// sudo apt-get update
+// sudo apt-get install ansible
+// ansible --version
+
+
+// install ansible plugin 
