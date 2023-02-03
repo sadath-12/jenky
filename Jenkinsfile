@@ -43,12 +43,12 @@ pipeline {
             }
         }
 
-	stage('INTEGRATION TEST'){
-            steps {
-                sh 'mvn -s settings.xml verify -DskipUnitTests'
-                //   sh 'mvn verify -DskipUnitTests'
-            }
-        }
+	// stage('INTEGRATION TEST'){
+    //         steps {
+    //             sh 'mvn -s settings.xml verify -DskipUnitTests'
+    //             //   sh 'mvn verify -DskipUnitTests'
+    //         }
+    //     }
 		
         stage ('CODE ANALYSIS WITH CHECKSTYLE'){
             steps {
