@@ -12,10 +12,10 @@ pipeline {
         NEXUS_USER = 'admin'
         NEXUS_PASS = 'admin123'
         RELEASE_REPO = 'vprofile-release'
-        CENTRAL_REPO = 'vpro-maven-central'
+        CENTRAL_REPO = 'vipro-maven-central'
         NEXUSIP = '172.31.37.144'
        NEXUSPORT = '8081'
-       NEXUS_GRP_REPO = 'vpro-maven-group'
+       NEXUS_GRP_REPO = 'vipro-maven-group'
         NEXUS_LOGIN = "nexuslogin"
         SONARSERVER = 'sonarserver'
         SONARSCANNER = 'sonarscanner'
@@ -91,7 +91,7 @@ pipeline {
             nexusArtifactUploader(
                 nexusVersion: 'nexus3',
                 protocol: 'http',
-                nexusUrl: "http://${NEXUSIP}:${NEXUSPORT}",
+                nexusUrl: "${NEXUSIP}:${NEXUSPORT}",
                 groupId: 'QA',
                 version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
                 repository: "${RELEASE_REPO}",
